@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITBees.WPFToolkit", "ITBees.WPFToolkit\ITBees.WPFToolkit.csproj", "{CE917A60-8440-498A-8057-C51B07A42AD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITBees.WPFToolkit.Presentation", "ITBees.WPFToolkit.Presentation\ITBees.WPFToolkit.Presentation.csproj", "{97A8093B-AAC8-4F92-A666-DDC40D568A64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE917A60-8440-498A-8057-C51B07A42AD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE917A60-8440-498A-8057-C51B07A42AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE917A60-8440-498A-8057-C51B07A42AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE917A60-8440-498A-8057-C51B07A42AD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97A8093B-AAC8-4F92-A666-DDC40D568A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A8093B-AAC8-4F92-A666-DDC40D568A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A8093B-AAC8-4F92-A666-DDC40D568A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A8093B-AAC8-4F92-A666-DDC40D568A64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E703B573-D8A8-4DF8-9270-1D45BBECD71F}
+	EndGlobalSection
+EndGlobal

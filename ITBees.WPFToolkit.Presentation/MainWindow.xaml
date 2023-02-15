@@ -1,0 +1,18 @@
+﻿<Window x:Class="ITBees.WPFToolkit.Presentation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ITBees.WPFToolkit.Presentation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Icon="/ITBeesOOPLogo.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="353,0,0,0">
+            <Button Content="Test Inputbox" Padding="10" Click="Button_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
