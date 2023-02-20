@@ -3,27 +3,28 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 
-namespace ITBees.WPFToolkit.Converters;
-
-public class BooleanToInvisibilityConverter : IValueConverter
+namespace ITBees.WPFToolkit.Converters
 {
-    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    public class BooleanToInvisibilityConverter : IValueConverter
     {
-        if (value == null)
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
+            if (value == null)
+            {
+                return Visibility.Collapsed;
+            }
+
+            if (!(bool)value)
+            {
+                return Visibility.Visible;
+            }
+
             return Visibility.Collapsed;
         }
 
-        if (!(bool)value)
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return Visibility.Visible;
+            throw new NotImplementedException();
         }
-
-        return Visibility.Collapsed;
-    }
-
-    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-    {
-        throw new NotImplementedException();
     }
 }
