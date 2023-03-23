@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ITBees.WpfToolkit.UiMessages"
         xmlns:wpfToolkit="clr-namespace:ITBees.WpfToolkit"
+        xmlns:uiMessages="clr-namespace:ITBees.WPFToolkit.UiMessages"
         mc:Ignorable="d"
         Title="{Binding InputBoxTitle}" Height="220" Width="350" 
         Icon="{Binding Icon}"
-        d:DataContext="{d:DesignInstance {x:Type wpfToolkit:InputBoxDesignData}, IsDesignTimeCreatable=True}" Activated="InputBox_OnActivated">
+        d:DataContext="{d:DesignInstance {x:Type uiMessages:InputBoxDesignData}, IsDesignTimeCreatable=True}" Activated="InputBox_OnActivated">
     <Grid>
         <DockPanel LastChildFill="True">
             <Label FontSize="16" Margin="10,15,15,15" DockPanel.Dock="Top" Content="{Binding InputBoxMessage}"></Label>
@@ -19,7 +20,7 @@
                 <Button FontSize="16" Content="{Binding SaveButtonTitle}" Margin="10" MinHeight="30" MinWidth="100"
                         Command="{Binding SaveButtonCommand}"></Button>
             </StackPanel>
-            <TextBox x:Name="InputBoxValue" VerticalContentAlignment="Center" Margin="15,0,15,15" FontSize="16" 
+            <TextBox x:Name="InputBoxValue" VerticalContentAlignment="Center" Margin="15,0,15,15" FontSize="16" Padding="5,0,0,0"
                      TextWrapping="WrapWithOverflow" 
                      Text="{Binding InputValue, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
                      HorizontalScrollBarVisibility="Auto"
@@ -30,10 +31,5 @@
                 </TextBox.InputBindings>
             </TextBox>
         </DockPanel>
-        <StackPanel Orientation="Vertical" Margin="10">
-
-
-        </StackPanel>
-
     </Grid>
 </Window>
